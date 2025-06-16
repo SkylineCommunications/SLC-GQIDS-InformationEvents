@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36127.28
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLC-GQIDS-InformationEvents", "SLC-GQIDS-InformationEvents\SLC-GQIDS-InformationEvents.csproj", "{8A53B3E2-28BB-4655-9277-700D1EEF3A51}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Internal", "Internal", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code Analysis", "Code Analysis", "{CDA90FE3-878F-4EF9-93CA-F2DEB7EA7588}"
+	ProjectSection(SolutionItems) = preProject
+		Internal\Code Analysis\qaction-debug.ruleset = Internal\Code Analysis\qaction-debug.ruleset
+		Internal\Code Analysis\qaction-release.ruleset = Internal\Code Analysis\qaction-release.ruleset
+		Internal\Code Analysis\stylecop.json = Internal\Code Analysis\stylecop.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GQI DS Information Events", "GQI DS Information Events\GQI DS Information Events.csproj", "{674740B0-0080-4562-9550-2B1B2DD84FEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A53B3E2-28BB-4655-9277-700D1EEF3A51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A53B3E2-28BB-4655-9277-700D1EEF3A51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A53B3E2-28BB-4655-9277-700D1EEF3A51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A53B3E2-28BB-4655-9277-700D1EEF3A51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{674740B0-0080-4562-9550-2B1B2DD84FEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{674740B0-0080-4562-9550-2B1B2DD84FEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{674740B0-0080-4562-9550-2B1B2DD84FEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{674740B0-0080-4562-9550-2B1B2DD84FEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CDA90FE3-878F-4EF9-93CA-F2DEB7EA7588} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9D1F514-DCB3-4858-89E9-BB995E1F2134}
+	EndGlobalSection
+EndGlobal
