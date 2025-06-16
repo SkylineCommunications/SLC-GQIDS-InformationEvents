@@ -1,52 +1,35 @@
 # Information Events Data Source
 
-This data source provides an integration for retrieving and filtering "Information Events" from a DataMiner System (DMS).
+## About
 
-## Features
+The **Information Events Data Source** empowers users to efficiently access and analyze information events from their DataMiner System.
 
-- **Time-based filtering:**  
-  Information events from a specific start date/time (`From`) and, optionally, up to an end date/time (`Until`).
+---
 
-- **Searching:**  
-  Sezrch information events, matching against both the type and value.
+## Key Features
 
-- **Efficient Paging:**  
-  Handles large result sets with server-side paging.
+- **Filter by Time Range:** Instantly focus on events within a specific period to accelerate investigations.
+- **Search Across Events:** Quickly locate events by searching both event type and value.
+- **Efficient Paging:** Seamlessly browse large event sets with server-side paging for optimal performance.
 
-- **Columns:**  
-  Returns the following columns for each event:
-  - `Origin` (Element Name)
-  - `Type` (Parameter Description)
-  - `Value`
-  - `Time` (UTC)
-  - `ID` (Alarm/Event ID)
+---
 
-## Input Arguments
+## Use Cases
 
-| Argument      | Type      | Required | Description                                 |
-|---------------|-----------|----------|---------------------------------------------|
-| From          | DateTime  | Yes      | Start of the time range to query            |
-| Until         | DateTime  | No       | End of the time range to query              |
-| Search term   | String    | No       | Text to search in parameter name or value   |
+- **Incident Investigation:** Rapidly retrieve and review all relevant information events during a service disruption.
+- **Operational Auditing:** Track changes or anomalies over time by filtering events within custom time windows.
+- **Targeted Event Analysis:** Search for specific event types or values to support troubleshooting and reporting.
 
-## Usage
+![Sample dashboard highlighting event filtering and search](./SLC-GQIDS-InformationEvents/CatalogInformation/Images/dashboard.png)
 
-1. **Configure the Data Source:**  
-   Add the data source to your GQI dashboard or app, referencing it as "Information Events".
+---
 
-2. **Set Input Arguments:**  
-   - Specify the `From` date/time to define the start of your query window.
-   - Optionally, set the `Until` date/time to limit the range.
-   - Optionally, provide a `Search term` to filter results.
+## Prerequisites
 
-3. **Query Results:**  
-   The data source will return a paged list of information events matching your criteria, with the columns described above.
+- DataMiner System without GQI DxM (DxM support is currently under development)
 
-## Sample Dashboard
+---
 
-A sample dashboard called `Information Events` is automatically added to your system.
+## Technical Reference
 
-![Sample dashboard](./SLC-GQIDS-InformationEvents/CatalogInformation/Images/dashboard.png)
-
-## Important
-Support for this data source using the GQI DxM is currently under development.
+Source code available at: [https://github.com/SkylineCommunications/SLC-GQIDS-InformationEvents](https://github.com/SkylineCommunications/SLC-GQIDS-InformationEvents)
