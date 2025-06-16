@@ -48,5 +48,5 @@ A sample dashboard called `Information Events` is automatically added to your sy
 
 ![Sample dashboard](./SLC-GQIDS-InformationEvents/CatalogInformation/Images/dashboard.png)
 
-> [!Important]
-> Support for this data source using the GQI DxM is currently under development.
+## Important
+Support for this data source using the GQI DxM is currently under development.
