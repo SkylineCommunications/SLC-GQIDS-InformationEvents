@@ -46,7 +46,7 @@ This data source provides an integration for retrieving and filtering "Informati
 
 A sample dashboard called `Information Events` is automatically added to your system.
 
-![Sample dashboard]('../images/dashboard.png')
+![Sample dashboard](./Images/dashboard.png)
 
 > [!Important]
 > Support for this data source using the GQI DxM is currently under development.
