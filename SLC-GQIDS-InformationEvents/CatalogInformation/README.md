@@ -4,15 +4,11 @@
 
 The **Information Events Data Source** empowers users to efficiently access and analyze information events from their DataMiner System.
 
----
-
 ## Key Features
 
 - **Filter by Time Range:** Instantly focus on events within a specific period to accelerate investigations.
 - **Search Across Events:** Quickly locate events by searching both event type and value.
 - **Efficient Paging:** Seamlessly browse large event sets with server-side paging for optimal performance.
-
----
 
 ## Use Cases
 
@@ -22,13 +18,9 @@ The **Information Events Data Source** empowers users to efficiently access and 
 
 ![Sample dashboard highlighting event filtering and search](./Images/dashboard.png)
 
----
-
 ## Prerequisites
 
 - DataMiner System without GQI DxM (DxM support is currently under development)
-
----
 
 ## Technical Reference
 

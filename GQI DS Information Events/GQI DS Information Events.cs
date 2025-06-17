@@ -154,10 +154,10 @@ namespace GQIDSInformationEvents
 				_previousCookie.Dispose();
 			}
 
-			var alarmPage = _query.ExecutePaged();
-			_previousCookie = alarmPage.PagingCookie as DisposablePagingCookie;
+			var eventsPage = _query.ExecutePaged();
+			_previousCookie = eventsPage.PagingCookie as DisposablePagingCookie;
 
-			var rows = alarmPage.Select(CreateRow).ToArray();
+			var rows = eventsPage.Select(CreateRow).ToArray();
 			return new GQIPage(rows)
 			{
 				HasNextPage = rows.Length > 0,
@@ -200,7 +200,7 @@ namespace GQIDSInformationEvents
 			var repository = registry.Get<IInfoRepository>();
 
 			if (repository == null)
-				throw new GenIfException("Could not create alarm repository.");
+				throw new GenIfException("Could not create information event repository.");
 
 			return repository;
 		}
@@ -210,12 +210,12 @@ namespace GQIDSInformationEvents
 			FilterElement<Info> filter = InfoExposers.TimeOfArrival.GreaterThanOrEqual(_from);
 			if (_until == default(DateTime))
 			{
-				_logger.Information($"Fetching alarm history from {_from.ToLongTimeString()} onwards.");
+				_logger.Information($"Fetching information events from {_from.ToLongTimeString()} onwards.");
 			}
 			else
 			{
 				filter = filter.AND(InfoExposers.TimeOfArrival.LessThan(_until));
-				_logger.Information($"Fetching alarm history from {_from.ToString("F")} until {_until.ToString("F")}.");
+				_logger.Information($"Fetching information event from {_from.ToString("F")} until {_until.ToString("F")}.");
 			}
 
 			if (!string.IsNullOrWhiteSpace(_searchTerm))
