@@ -20,4 +20,5 @@ The **Information Events Data Source** allows users to efficiently access and an
 
 ## Prerequisites
 
-- DataMiner System without GQI DxM (DxM support is currently under development)
+- DataMiner System without GQI DxM, **or**
+- DataMiner System with GQI DxM enabled (version 10.5.9 or higher required)
