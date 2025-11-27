@@ -59,7 +59,7 @@ documentation_url:
 #   The name is required; max 256 characters.
 #   The email and URL are optional, and should be in valid email/URL formats.
 owners:
-  - name: 'Sebastiaan'
+  - name: 'Sebastiaan Dumoulein'
   
 # [Optional]
 # Tags that allow you to categorize your Catalog items.
